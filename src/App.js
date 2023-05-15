@@ -6,7 +6,7 @@ export const App = () => {
     return (
         <>
             <header>
-                <h1 className={styles.mainTitle}>Dish Application</h1>
+                <h1 className={styles.mainTitle}>Dishes Form</h1>
             </header>
             <main className="App">
                 <AddDishForm />
