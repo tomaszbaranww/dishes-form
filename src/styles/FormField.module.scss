@@ -1,0 +1,16 @@
+.formField {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    input,
+    select {
+        font-size: 1rem;
+    }
+}
+
+.errorMsg {
+    color: red;
+    font-weight: bold;
+    font-size: 0.8rem;
+}

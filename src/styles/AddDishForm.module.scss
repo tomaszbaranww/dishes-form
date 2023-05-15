@@ -1,0 +1,42 @@
+section {
+    max-width: 1200px;
+    margin: 4rem auto 0;
+}
+
+.addFormTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: cornflowerblue;
+    margin: 0 0 2rem;
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    color: whitesmoke;
+    gap: 1rem;
+}
+
+.addBtn {
+    width: 100px;
+    padding: 0.8em;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1rem;
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+    &:is(:hover, :active, :focus) {
+        color: #333;
+        background-color: whitesmoke;
+    }
+}
+
+.msg {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
