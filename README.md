@@ -25,3 +25,10 @@ npm install
 ```
 npm start
 ```
+
+# Requirements
+
+- Node: >=16.19.0
+- NPM: >=9.4.2
+
+> The task took me around 5 hours.
