@@ -31,21 +31,17 @@ const schema = yup.object().shape({
                 .min(1, 'Value must be grater than or equal to 1.')
                 .required('Value is required.'),
     }),
-    spiciness_scale: yup
-        .number()
-        .transform((value) => (isNaN(value) ? undefined : value))
-        .nullable()
-        .min(1, 'Value must be grater than or equal to 1.')
-        .max(10, 'Value must be less than or equal to 10.')
-        .when('type', {
-            is: 'soup',
-            then: () =>
-                yup
-                    .number()
-                    .transform((value) => (isNaN(value) ? undefined : value))
-                    .nullable()
-                    .required('Value is required.'),
-        }),
+    spiciness_scale: yup.number().when('type', {
+        is: 'soup',
+        then: () =>
+            yup
+                .number()
+                .transform((value) => (isNaN(value) ? undefined : value))
+                .nullable()
+                .min(1, 'Value must be grater than or equal to 1.')
+                .max(10, 'Value must be less than or equal to 10.')
+                .required('Value is required.'),
+    }),
     slices_of_bread: yup.number().when('type', {
         is: 'sandwich',
         then: () =>
