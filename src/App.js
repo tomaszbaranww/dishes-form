@@ -1,13 +1,11 @@
-import 'styles/global.scss';
-import styles from 'styles/App.module.scss';
-import { AddDishForm } from 'features/dishes/AddDishForm';
+import 'assets/styles/global.scss';
+import { Header } from 'components/Header/Header';
+import { AddDishForm } from 'features/dishes/AddDishForm/AddDishForm';
 
 export const App = () => {
     return (
         <>
-            <header>
-                <h1 className={styles.mainTitle}>Dishes Form</h1>
-            </header>
+            <Header />
             <main className="App">
                 <AddDishForm />
             </main>

@@ -1,0 +1,15 @@
+.header {
+    background-color: #e57c23;
+    position: sticky;
+    top: 0;
+
+    &__main {
+        margin: 1rem 1.5rem;
+    }
+
+    &__content {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
