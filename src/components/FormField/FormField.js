@@ -1,4 +1,4 @@
-import styles from 'styles/FormField.module.scss';
+import styles from 'components/FormField/FormField.module.scss';
 
 export const FormField = ({ label, error, register, id, name, type, options }) => (
     <div className={styles.formField}>
