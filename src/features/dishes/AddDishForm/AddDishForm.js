@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import { addNewDish, getDishesMessage, getDishesStatus } from 'features/dishes/dishesSlice';
-import { FormField } from 'components/FormField';
+import { FormField } from 'components/FormField/FormField';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import styles from 'styles/AddDishForm.module.scss';
+import styles from 'features/dishes/AddDishForm/AddDishForm.module.scss';
 import { timeRegExp } from 'utils/utils';
 
 const schema = yup.object().shape({
@@ -163,7 +163,7 @@ export const AddDishForm = () => {
                     Add
                 </button>
                 {status && message && (
-                    <span className={styles.msg} style={{ color: status === 'failed' ? 'red' : 'green' }}>
+                    <span className={styles.msg} style={{ color: status === 'failed' ? '#d0312d' : '#3cb043' }}>
                         {message}
                     </span>
                 )}
