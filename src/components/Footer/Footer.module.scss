@@ -1,0 +1,16 @@
+.footer {
+    background-color: #025464;
+
+    &__main {
+        margin: 0.7rem 1.5rem;
+    }
+
+    &__content {
+        color: #fff;
+        display: grid;
+        place-content: center;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
