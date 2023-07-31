@@ -1,6 +1,6 @@
 # Dishes Form
 
-Link: https://panwidmo.github.io/dishes-form/
+Link: https://tomaszbaranww.github.io/dishes-form/
 
 # Getting Started
 
@@ -11,7 +11,7 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 
 ```
-git clone https://github.com/PanWidmo/dishes-form.git
+git clone https://github.com/tomaszbaranww/dishes-form.git
 ```
 
 2. Install NPM packages
