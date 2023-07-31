@@ -1,7 +1,7 @@
 {
     "name": "dishes-form",
     "version": "0.1.0",
-    "homepage": "https://PanWidmo.github.io/dishes-form",
+    "homepage": "https://tomaszbaranww.github.io/dishes-form",
     "private": true,
     "dependencies": {
         "@hookform/resolvers": "^3.1.0",
